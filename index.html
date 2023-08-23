@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irelia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/Ionia_icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="irelia">
+        <input type="text" id="searchInput" placeholder="Search champion..."> 
+        <div class="background-section"></div>
+        <p data-item='Irelia'>Irelia</p>
+        <header>
+            <section>
+                <div style="width: 100% ">Ultimate Irelia Matchup Guide</div>
+                <nav>
+                    <ul class="menuItems" style="width: 100% ">
+                        <li><a href='index.html' data-item='Home'>Home</a></li>
+                        <li><a href='about.html' data-item='About'>About</a></li>
+                        <li><a href='#' data-item='Projects'>Projects</a></li>
+                        <li><a href='#' data-item='Blog'>Blog</a></li>
+                        <li><a href='#' data-item='Contact'>Contact</a></li>
+
+
+                    </ul>
+                </nav>
+
+            </section>
+        </header>
+    </div>
+    
+    <main style="width: 80% "> <!-- Probar sin width: 100%-->
+    
+
+        </div>
+        
+        <table class="tier-list" id="tier-list-table">
+
+            <thead>
+                <tr>
+                    <th class="champion-header" onclick="sortTable(0)">Campeón</th>
+                    <th class="rol-header">Rol</th>
+                    <th class="dificultad-header">Dificultad</th>
+                    <th>Matchup</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aatrox -->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/aatrox.png" alt="Aatrox Icon" class="champion-icon">
+                        Aatrox
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lvl 1 Q. Slow push, get level 2 faster, hit E and all-in, even lvl 1 if he
+                        dont
+                        respect ur passive.
+                        Just dance around him dodging his Q's. Don't get poked for free.
+                        Mitigate Q3 damage with W or flash if needed. It's a favorable lane for Irelia, thats why Aatrox
+                        players
+                        ban her.
+                        Bortk -> antiheal.
+                    </td>
+                </tr>
+                <!-- Ahri-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/ahri.png" alt="Ahri Icon" class="champion-icon">
+                        Ahri
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">In low elo she won't respect the all-in so i take ignite and go for early
+                        kills. Keep raptors warded 1:15-2:22. In high elo i take Doran shield + TP and focus on farm,
+                        waves and prio for 3:30, she has <b>no chance </b>when u get BOTRK even if she is 10 kills
+                        ahead.
+                    </td>
+                </tr>
+                <!-- Akali -->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/akali.png" alt="Akali Icon" class="champion-icon">
+                        Akali
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png " alt="Mid Role" class="rol-icon">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">U can look for all-in lvl 1 with passive, safest option is start E, play
+                        passive till the bounce of the wave. Try to dodge her Q's moving adjacent to her. I would say
+                        its a bad matchup because after level 3 she can mitigate ur dps with Twilight Shroud and to deal
+                        damage to her she needs to mess up while being on cd.</td>
+                </tr>
+                <!-- Asol -->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Aurelion_Sol.png" alt="Aurelion_Sol Icon" class="champion-icon">
+                        Aurelion Sol
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Fácil</td>
+                    <td class="matchup-cell">As an ASol player i can say that if Irelia plays good the lane is
+                        unplayeable. But if i get 3 items i can <b>turn the game around. </b> So as Irelia the hardest
+                        part is to take all the early objetives and don't int midgame. </td>
+                </tr>
+                <!-- Camille-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Camille.png" alt="Camille Icon" class="champion-icon">
+                        Camille
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">If you can't stack your passive at level 1, start with E and let the wave
+                        crash to your turret. After that, look for fights. Avoid getting poked by her Q and go for
+                        all-ins. Don't hesitate to use Flash if she makes a mistake, especially since most Camille
+                        players take Ignite + TP. You can block her E if she engages, and if she commits to you, you
+                        should dodge with Q or mitigate with W. </td>
+                </tr>
+                <!-- Cho'Gath-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Cho'Gath.png" alt="Cho_Gath Icon" class="champion-icon">
+                        Cho'Gath
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">This guy has a huge model so hitting your skills on him is super easy. He
+                        is also super squishy early on so you can start Q and look to build your passive and fight him
+                        early. You can also avoid all of his abilities with your Q granted you have minions around you.
+                        The only way you really lose is if you get hit by everything and he has minion advantages. Its
+                        also risky after 6 if you misstep as he can easily chase you down due to your low base movement
+                        speed and kill you. Fight with full passive and land your R and E, use minions to avoid his
+                        skill shots and you will win. Be careful of the jungler, it's the only way you really lose this
+                        lane.
+                    </td>
+                </tr>
+                <!-- Darius-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/darius.png" alt="Darius Icon" class="champion-icon">
+                        Darius
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Avoid fighting him at lvl 1 since you won't have passive, start e and let
+                        him push you in. E him after he autos you so that your creeps target him. Once it pushes to
+                        tower stack your passive and look for fights, especially since it will be pushing back and you
+                        will have exp advantage over him. Don’t be afraid to fight him even if he looks spooky. Make
+                        sure he has no boneplating before all-inning him and land your E before you go in AND make sure
+                        you have passive. Save your last Q for his Q, spam your Q when they pull you if they are
+                        charging his Q. If you don’t get hit by his outer Q you will typically win, same goes later
+                        levels however I would avoid fighting him after 3 items if you are not ahead of him since it
+                        will take you too long to kill him and he will get his passive.
+
+                    </td>
+                </tr>
+                <!-- Dr.Mundo-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Dr.Mundo.png" alt="Dr.Mundo Icon" class="champion-icon">
+                        Dr.Mundo
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell"> Super easy lane, feel free to start Q and look for early fights with
+                        passive stacked. He is super easy to beat as long as you don't get camped. Get executioners
+                        after botrk you don't really need it until he is level 11.
+                        Be really careful when all inning though, if you mess up he can easily run you down.
+                    </td>
+                </tr>
+                <!-- Fiora-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Fiora.png" alt="Fiora Icon" class="champion-icon">
+                        Fiora
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell"> Irelking made me change about this one, i thought it was harder but pure
+                        skill matchup.Avoid fighting her at lvl 1 since you won't have passive and her Q destroys you
+                        early on however don't be afraid to use the minions to your advantage if she is overly
+                        aggressive. Start e and let her push you in. E her after she autos/q you so that your creeps
+                        target her. Once it pushes to tower stack your passive and look for fights if you have a level
+                        over her. Use your Q to avoid her parry or your flash if you don't have low HP minions around
+                        you. Rule of thumb in this lane is, if you start a fight with full passive and full HP AND you
+                        have low hp minions, you win if you dodge her W. It is easier after level 6 since they almost
+                        always parry the E making her W very predictable. As long as you have ONE Q mark on her, you
+                        will typically win if you start the fight with 5 stacks and have avoided her W. Avoid fighting
+                        her after 2+ items unless ahead since its really hard to out damage her if she has tabi. Rush
+                        executioners and look for fights asap once you have your botrk if the lane is going even.
+                    </td>
+                </tr>
+                <!-- Gangplank-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Gangplank.png" alt="Gangplank Icon" class="champion-icon">
+                        Gangplank
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell"> It is generally an easy lane but if you are against someone good at
+                        gangplank it can be a bit troublesome.
+                        I recommend avoiding fighting at level 1 and starting E and just letting him push you in early
+                        on. You can build up passive under tower and look for fights after. You will win all ins granted
+                        that you hit your E and have passive from the start. Try to only go for all ins if you are over
+                        75% hp. Anything else he can easily beat you with grasp procs and auto/Q/his passive. After 6 it
+                        gets a bit easier as you can open up with ult and 5 stacks and you can land your E on him with
+                        the slow. It is fairly easy to beat him as long as you land everything. You beat him until 3-4
+                        items assuming you don't fall behind.
+                    </td>
+                </tr>
+                <!-- Garen-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Garen.png" alt="Garen Icon" class="champion-icon">
+                        Garen
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">This matchup is straight forward but can be a nightmare if you fall behind
+                        (he can literally dive you at will). Try to avoid his Q with your E early, when he runs at you
+                        stun him and auto and then back away. You don’t need to let it crash to your tower, auto the
+                        minions back to keep the lane in the middle. Once you hit level 2, stack your passive but
+                        maintain your distance. Once you stack your passive you can E him and Q to him or Q a low hp
+                        minion to maximize your autos. Start autoing him and stun him when he turns on you (easiest time
+                        to land your E on anyone really). He will do a good chunk of damage but you will outdamage him
+                        in a prolonged fight. Do try to get free autos in before you all in him. Post level 3, use your
+                        W on his Q before it hits you and you will have a major advantage in this lane. Post 6 it gets a
+                        little harder as you do have to watch your hp but as long as you chunk him a bit with your auto
+                        range, W his Q and land your abilities (E/R) you will come out on top. I would avoid fighting
+                        him post level 11 if you do not get ahead of him.
+                    </td>
+
+                </tr>
+                <!-- Gnar -->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Gnar.png" alt="Gnar Icon" class="champion-icon-doble">
+                        Gnar
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Can be quite hard if you fall behind him as he is impossible to run away
+                        from but otherwise he is a fairly easy lane. Start Q and build passive and look to fight early
+                        on. You crush him before he gets items. As long as you hit your abilities on him you will win
+                        100% of the time assuming you have passive stacked. Use your Q on low hp minions to dodge his Q
+                        and W and avoid being near walls when he is level 6 and has his ultimate form.
+                    </td>
+                    <!-- Gragas-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Gragas.png" alt="Gragas Icon" class="champion-icon">
+                        Gragas
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png " alt="Mid Role" class="rol-icon">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">He is a neutralizer. He is easy to fight but he can also stop you from auto
+                        attacking quite easily and keep poking you with barrels so he can be a pain. Also most of the
+                        people that will be playing Gragas tend to main him so that will also make things a bit more
+                        difficult. The way I tend to beat Gragas is stack up passive and look for level 1-2 fights
+                        because he won’t have all of his abilities that help him trade back. He is generally pretty
+                        strong at level 3 due to his high base damage. You can also juke out his Q and E easily while
+                        trading with him. It is quite easy to outplay him but you have to be careful with how easy it is
+                        for him to disengage from you after chunking you heavily. So, I’d recommend only fighting him if
+                        you have minions set up to juke him out so you don’t have to worry about him bursting you and
+                        disengaging. Be careful when committing as if you miss anything he can easily run you down so
+                        make sure you hit your abilities/have passive stacked before going for an all in.
+
+                    </td>
+
+                </tr>
+                <!-- Heimerdinger -->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Heimerdinger.png" alt="Heimerdinger Icon" class="champion-icon">
+                        Heimerdinger
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png " alt="Mid Role" class="rol-icon">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Can be troubling if he lands his combo on you but it is fairly easy to
+                        avoid everything he throws at you. Start with Q and look to build your passive/be aggressive
+                        early on. If you land your E at level 2 it is a guaranteed flash or kill from him depending on
+                        how hard you chunk him. You can be extremely aggressive against him just make sure to be aware
+                        of ganks. Post 6 it is crucial to avoid his combo as he can easily do 80%+ of your hp in a
+                        second or two if you get hit by his combo. Avoid his combo and you are golden in all ins.</td>
+                </tr>
+                <!-- Illaoi-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Illaoi.png" alt="Illaoi Icon" class="champion-icon">
+                        Illaoi
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">This lane isn't too bad. I start Q in this lane and last hit minions to get
+                        my passive stacked (don't be afraid to auto her to make sure you don't lose your stacks). When
+                        the wave is about in the middle, when you hit level 2 (preferably before her), land your E and
+                        try to all in her, you will either get her flash or kill her. This setup will give you a large
+                        advantage in lane, she will likely be passive after this and if she is chunked enough don't be
+                        afraid to dive her. After level 3 it is a bit harder if she lands her E on you but it is
+                        generally a slow skillshot and you should be able to avoid it. As long as you avoid it you will
+                        have no problems beating her granted that your passive is stacked, however, I would avoid
+                        fighting her once she has cleaver even if you are super ahead of her. The reason for this is
+                        even if she misses her E it will be up again as you are fighting her and if you die and give her
+                        a shut down its BAD news for you and your team and if you aren't ahead of her, all inning Illaoi
+                        is a good joke.</td>
+                </tr>
+                <!-- Jax-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Jax.png" alt="Jax Icon" class="champion-icon">
+                        Jax
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">He beats you level 1 unless you have minions set up for passive, but
+                        usually its better to start with e. Don't be afraid to auto him because if he presses e then you
+                        can just simply stun him and run away. This will screw up the wave and it will push to you and
+                        you can keep going for sneaky autos because your auto range is a lot longer but if you just go
+                        for farm its also fine. You can use this to get level advantages which are pretty big early on.
+                        Try to keep your passive at 5 stacks and auto attacking him whenever he is in range, if he is
+                        close enough you go for an e and if you land your e don't be afraid to q on him and auto. After
+                        lvl 6 It gets easier but it also gets very punishing if you make any mistakes after this point.
+                        At level 6 jax gets a lot of extra damage from his R passive every third auto and is really
+                        tanky with his ult. You have to start with a full passive in every fight and you also have to
+                        make sure that his passive is not stacked, if it is his full passive is stronger than yours.
+                        This is generally how the lane plays out until level 11. If you have not gotten ahead of him
+                        after lvl 11 do not try to 1v1 him unless you have help on the way. His ult passive does too
+                        much damage and his E cooldown will be very short but if you are ahead the same concept from
+                        above applies.</td>
+                </tr>
+                <!-- Jayce-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Jayce.png" alt="Jayce Icon" class="champion-icon">
+                        Jayce
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                        <img src="img/mid.png " alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Can vary largely on whether or not you get camped. If you get camped this
+                        lane can be a nightmare, however I would start E against him instead of Q like how you would
+                        against other range matchups. He will look to poke you out at level 1 and jump on you with his Q
+                        in melee form this is when you want to stun and auto him. Once it pushes under your tower you
+                        can stack your passive and when it pushes back, if you have your passive stacked and you land an
+                        E you absolutely destroy him. After level 3 try to use your W on his Q (either the empowered EQ
+                        or the melee Q) as it is a bulk of his damage and you should be fine. It gets even easier at lvl
+                        6 because he does not get a real ultimate and opening with your ult makes it easy to hit your E
+                        on him.
+                    </td>
+                </tr>
+                <!-- Kennen-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Kennen.png" alt="Kennen Icon" class="champion-icon">
+                        Kennen
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                        <img src="img/mid.png " alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Kled-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Kled.png" alt="Kled Icon" class="champion-icon-doble">
+                        Kled
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Lucian-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Lucian.png" alt="Lucian Icon" class="champion-icon">
+                        Lucian
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                        <img src="img/mid.png " alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Malphite-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Malphite.png" alt="Malphite Icon" class="champion-icon">
+                        Malphite
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Mao'Kai-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Maokai.png" alt="Maokai Icon" class="champion-icon">
+                        Mao'Kai
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Mordekaiser-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Mordekaiser.png" alt="Mordekaiser Icon" class="champion-icon">
+                        Mordekaiser
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Nasus-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Nasus.png" alt="Nasus Icon" class="champion-icon">
+                        Nasus
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Nocturne-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Nocturne.png" alt="Nocturne Icon" class="champion-icon">
+                        Nocturne
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                <!-- Ornn-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Ornn.png" alt="Ornn Icon" class="champion-icon">
+                        Ornn
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Pantheon-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Pantheon.png" alt="Pantheon Icon" class="champion-icon">
+                        Pantheon
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Poppy-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Poppy.png" alt="Poppy Icon" class="champion-icon">
+                        Poppy
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                <!-- Quinn-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Quinn.png" alt="Quinn Icon" class="champion-icon-doble" >
+
+                        Quinn
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Rammus-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/rammus.png" alt="Rammus Icon" class="champion-icon">
+                        Rammus
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell imposible">Impossible</td>
+                    <td class="matchup-cell">No ganas ni buildeandote AP, te gana en todos los momentos de la
+                        partida, te hace proxy, se ríe de tu jungla y mata a tu medio. Dodge.</td>
+                </tr>
+                <!-- Renekton-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Renekton.png" alt="Renekton Icon" class="champion-icon">
+                        Renekton
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                <!-- Rengar-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Rengar.png" alt="Rengar Icon" class="champion-icon">
+                        Rengar
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Riven-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Riven.png" alt="Riven Icon" class="champion-icon">
+                        Riven
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+
+                <!-- Rumble-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Rumble.png" alt="Rumble Icon" class="champion-icon">
+                        Rumble
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Sett-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Sett.png" alt="Sett Icon" class="champion-icon">
+                        Sett
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                <!-- Shen-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Shen.png" alt="Shen Icon" class="champion-icon">
+                        Shen
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                <!-- Singed-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Singed.png" alt="Singed Icon" class="champion-icon">
+                        Singed
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Sion-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Sion.png" alt="Sion Icon" class="champion-icon">
+                        Sion
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Teemo-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Teemo.png" alt="Teemo Icon" class="champion-icon">
+                        Teemo
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Tryndamere-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Tryndamere.png" alt="Riven Icon" class="champion-icon">
+                        Tryndamere
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Urgot-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Urgot.png" alt="Urgot Icon" class="champion-icon">
+                        Urgot
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Vayne-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Vayne.png" alt="Vayne Icon" class="champion-icon">
+                        Vayne
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Vladimir-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Vladimir.png" alt="Vladimir Icon" class="champion-icon">
+                        Vladimir
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Volibear-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Volibear.png" alt="Volibear Icon" class="champion-icon">
+                        Volibear
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                  <!-- Warwick-->
+                  <tr>
+                    <td class="champion-cell">
+                        <img src="img/Warwick.png" alt="Warwick Icon" class="champion-icon">
+                        Warwick
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell imposible">Impossible</td>
+                    <td class="matchup-cell">No ganas ni buildeandote AP, te gana en todos los momentos de la
+                        partida, te hace proxy, se ríe de tu jungla y mata a tu medio. Dodge.</td>
+                </tr>
+                <!-- Wukong-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Wukong.png" alt="Wukong Icon" class="champion-icon">
+                        Wukong
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell dificil">Hard</td>
+                    <td class="matchup-cell">Lorem ipsum Old matchup
+                    </td>
+                </tr>
+                <!-- Yasuo-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Yasuo.png" alt="Yasuo Icon" class="champion-icon">
+                        Yasuo
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell medio">Medium</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+                <!-- Yorick-->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/Yorick.png" alt="Yorick Icon" class="champion-icon">
+                        Yorick
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/top.png" alt="Top Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Easy</td>
+                    <td class="matchup-cell">Lorem ipsum
+                    </td>
+                </tr>
+
+
+
+
+
+
+                <!-- Separacion de campeones -->
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/ahri.png" alt="Ahri Icon" class="champion-icon">
+                        Ahri
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Fácil</td>
+                    <td class="matchup-cell">Matchup fácil contra la mayoría de los magos.</td>
+                </tr>
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/ahri.png" alt="Ahri Icon" class="champion-icon">
+                        Ahri
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Fácil</td>
+                    <td class="matchup-cell">Matchup fácil contra la mayoría de los magos.</td>
+                </tr>
+                <tr>
+                    <td class="champion-cell">
+                        <img src="img/ahri.png" alt="Ahri Icon" class="champion-icon">
+                        Ahri
+                    </td>
+                    <td class="rol-cell">
+                        <img src="img/mid.png" alt="Mid Role" class="rol-icon">
+                    </td>
+                    <td class="dificultad-cell facil">Fácil</td>
+                    <td class="matchup-cell">Matchup fácil contra la mayoría de los magos.</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </main>
+
+        <script src="index.js"></script>
+
+        <!-- Footer starts-->
+        <footer>
+
+
+
+            <!-- ❤️  -->
+            <div class="footer-copyright text-center">&copy; Developed with ❤️</i> by
+                <a href="https://github.com/TigScript" class="white-text" target="_blank">Tig</a>. <a
+                    href="https://op.gg" target="_blank">Check my other socials </a>
+            </div>
+
+
+        </footer>
+
+
+    </body>
+
+    </html>

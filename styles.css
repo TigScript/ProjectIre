@@ -1,0 +1,320 @@
+/* Reset some default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body, donde meto la imagen de background para toda la pagina*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Cambio aquí para alineación superior */
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #fffaf552;
+  background-image: url(img/Ilustracionirelia.png);
+  background-size: 120%;
+  background-position: 0px -120px;
+  margin: 0;
+  /* Añadir esta línea para eliminar margen */
+}
+
+.irelia {
+  /* Contenedor DIV Para el HEADER*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  min-height: 20vh;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('img/prueba.jpg');
+  background-size: cover;
+  /* Ajusta la imagen para cubrir todo el ancho */
+  background-position: -120px -100px;
+  background-size: 120%;
+  margin-bottom: auto;
+  /* Añadir esta línea para que no empuje hacia abajo */
+}
+
+/* Styling for the text div */
+div {
+  color: #8f8f8f;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Styling for the text with hover effect */
+p {
+  margin: 16px;
+  font-size: 96px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+}
+
+p::before {
+  content: attr(data-item);
+  transition: all 1s ease-in-out;
+  color: rgb(240, 204, 4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+p:hover::before {
+  width: 100%;
+}
+
+
+
+/* Styling for the navigation menu */
+nav {
+  margin: 25px;
+  background: #f9f9f97e;
+  padding: 16px;
+
+}
+
+.menuItems {
+  list-style: none;
+  display: flex;
+}
+
+.menuItems li {
+  margin: 0 10px;
+}
+
+.menuItems a {
+  text-decoration: none;
+  color: #706f6f;
+  font-size: 24px;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menuItems a::before {
+  content: attr(data-item);
+  transition: 0.5s;
+  color: #FFD700;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.menuItems a:hover::before {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+/* FOOTER STYLE */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #000000;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+}
+
+footer a:hover {
+  border-bottom: 1px transparent;
+}
+
+/* ESTILOS DE TABLA */
+/* ESTILOS DE TABLA */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* Alinea el contenido en la parte superior */
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  /* Espacio arriba para el campo de búsqueda */
+  flex-grow: 1;
+  /* Ocupar espacio restante verticalmente */
+}
+
+table.tier-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+table.tier-list th,
+table.tier-list td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+
+table.tier-list th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+table.tier-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table.tier-list tr:nth-child(odd) {
+  background-color: #e7e5e5;
+}
+
+table.tier-list tr:hover {
+  background-color: #e0e0e0;
+}
+
+.dificultad-cell {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.facil {
+  background-color: rgb(4, 131, 4);
+  color: white;
+}
+
+.medio {
+  background-color: rgb(214, 146, 19);
+  color: white;
+}
+
+.dificil {
+  background-color: rgb(117, 5, 5);
+  color: white;
+}
+
+.imposible {
+  background-color: black;
+  color: white;
+}
+
+.champion-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* Cambio las dimensiones para los iconos que tienen dos imagenes, kled, quinn y gnar */
+.champion-icon-doble {
+  width: 60px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.rol-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Estilo adicional para la columna de Matchup */
+.matchup-cell {
+  max-width: 300px;
+  /* Ajusta el ancho máximo según tu diseño */
+}
+
+/* Estilos para resaltar la celda al pasar el cursor */
+table.tier-list tr:hover td {
+  background-color: #e0e0e0;
+}
+
+/* Estilos para resaltar el puntero sobre el encabezado de la columna "Campeón", "Rol" y "Dificultad"*/
+th.champion-header:hover,
+th.rol-header:hover,
+th.dificultad-header:hover {
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease-in-out;
+  cursor: url('img/cursor2.cur'), auto;
+  /* Cambia el cursor a cursor2 al hacer hover */
+}
+
+
+/* Estilos para resaltar las celdas de la columna "Campeón" */
+/* Estilos para resaltar las celdas de la columna "Campeón" */
+.champion-cell {
+
+
+  align-items: left;
+
+  /* Permite que las celdas ocupen el tamaño restante */
+  flex-basis: 0;
+  /* Evita que las celdas tengan un tamaño mínimo */
+  padding: 10px;
+  /* Agrega un relleno para el contenido dentro de las celdas */
+
+}
+
+/* Ajusta el margen izquierdo en negativo para mover la imagen hacia la izquierda */
+.champion-cell img {
+  margin-left: 10px;
+
+
+
+}
+
+/* Estilos boton */
+#searchInput {
+  position: absolute;
+  /* Hace que el campo de entrada sea fijo en la pantalla */
+  top: 210px;
+  /* Ajusta la posición vertical según tus necesidades */
+  right: 200px;
+  /* Ajusta la posición horizontal según tus necesidades */
+
+  padding: 10px;
+  /* Añade espacio interno alrededor del texto */
+  font-size: 16px;
+  /* Tamaño de fuente */
+  border: 1px solid #ccc;
+  /* Borde alrededor del campo de entrada */
+  border-radius: 5px;
+  /* Bordes redondeados */
+  background-color: white;
+  /* Color de fondo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Sombra ligera */
+  width: 250px;
+  /* Ajusta el ancho según tus necesidades */
+  z-index: 999;
+  /* Asegura que el campo esté en la parte superior de otros elementos */
+}
